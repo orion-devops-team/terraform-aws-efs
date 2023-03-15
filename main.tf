@@ -81,8 +81,9 @@ resource "aws_efs_access_point" "default" {
 }
 
 module "security_group" {
-  source  = "cloudposse/security-group/aws"
-  version = "0.4.2"
+  source = "git::https://github.com/orion-devops-team/terraform-aws-security-group.git?ref=feature/fork_list_of_object_with_type"
+  #source  = "cloudposse/security-group/aws"
+  #version = "0.4.2"
 
   enabled                       = local.security_group_enabled
   security_group_name           = var.security_group_name
