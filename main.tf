@@ -81,7 +81,7 @@ resource "aws_efs_access_point" "default" {
 }
 
 module "security_group" {
-  source = "git::https://github.com/orion-devops-team/terraform-aws-security-group.git?ref=feature/fork_list_of_object_with_type"
+  source = "git::https://github.com/orion-devops-team/terraform-aws-security-group.git?ref=feature/fork_add_type_rule_matrix"
   #source  = "cloudposse/security-group/aws"
   #version = "0.4.2"
 
